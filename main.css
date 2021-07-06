@@ -1,0 +1,223 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+
+.font {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-links{
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links a {
+  display: block;
+  padding: 15px;
+  background: black;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color:white;
+  
+  
+}
+
+.nav-links a:hover {
+  text-decoration:underline;
+}
+
+.social-media {
+ display: block;
+}
+
+.nav-container {
+  padding: 0 20px;
+  background:black;
+  display:flex;
+  justify-content: space-between;
+}
+
+.nav-container img{
+  width: 100px;
+  align-self: center;
+
+}
+
+.line1, .line2, .line3 {
+  width: 30px;
+  height: 4px;
+  margin: 5px;
+  background: white;
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.btn{
+  padding:2px;
+  display: inline-block;
+  cursor: pointer;
+  align-self:center;
+}
+
+.change .line1{
+    transform: rotate(-45deg) translate(-7px, 6px);
+
+}
+
+.change .line2{
+  opacity: 0;
+}
+
+.change .line3{
+  transform: rotate(45deg) translate(-7px, -8px); 
+}
+
+nav {
+  flex: 0 0 auto;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: background 2s ease;
+  background: black;
+}
+
+nav ul li:last-of-type{
+  display: flex;
+}
+
+nav ul li:last-of-type a {
+   display: flex;
+   flex: 1 0 auto;
+   text-align-last: center;
+}
+
+.fab {
+  font-size: 30px;
+}
+
+.nav-links .social-media a:hover{
+  text-decoration: none;
+}
+
+.navBackground {
+  background: black;
+}
+
+
+
+
+/*================= HERO IMAGE ==================*/
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(12, 12, 12, 0.53)), url('images/pl-gym.jpg')center/cover fixed no-repeat;}
+  
+
+.main-title {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-text {
+  flex: 0 0 90%;
+  text-align: center;
+  padding: 100px;
+  margin-bottom: 20px;
+}
+
+
+.main-text h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  color:white;
+  margin-bottom: 25px;
+  font-weight:bolder ;
+
+}
+
+.main-text p{
+  margin:0 auto;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  color: rgb(218, 216, 216);
+  line-height: 2;
+}
+
+.main-btn {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 5px;
+  border: 3px solid white;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.main-btn:hover {
+  color: gold;
+  transform: scale(1.1);   
+
+}
+
+@media screen and (min-width:992px){
+  .btn {
+  display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .nav-container{
+    background: transparent;
+    flex: 0 0 auto;
+  }
+
+  .nav-links{
+    padding: 0 20px;
+    flex: 1 0 auto; 
+    display: flex !important;
+    justify-self:flex-start ;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .nav-links li{
+    flex: 1 0 auto;
+    text-align: center;
+  }
+
+  .nav-links a{
+    background: transparent;
+    text-align: center;
+    color: white;
+  }
+  .social-media {
+    flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-self: space-around;
+    list-style-type: none;
+    padding: 0 20px;
+    font-size: 40px;
+  }
+
+  .social-media a:hover{
+    color: gold;
+    transform: translateY(-10%)
+  }
+}
