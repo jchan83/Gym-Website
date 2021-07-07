@@ -115,7 +115,8 @@ header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(12, 12, 12, 0.53)), url('images/pl-gym.jpg')center/cover fixed no-repeat;}
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(12, 12, 12, 0.53)), url('images/pl-gym.jpg')center/cover fixed no-repeat;
+}
   
 
 .main-title {
@@ -221,3 +222,329 @@ header {
     transform: translateY(-10%)
   }
 }
+
+
+/* about section */
+
+.section-center{
+  padding: 64px;
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about {
+  background: white;
+}
+
+.about-img{
+  width: 100%;
+  display: block;
+  height:520px;
+  width: 480px;
+}
+
+.about-img, .about-info {
+  margin-bottom: 64px;
+}
+
+.about-info h2{
+  text-transform: uppercase;
+}
+
+.about-text{
+  margin-bottom: 20px;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.about-btn{
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 4px;
+  border: 3px solid black;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 14px 25px;
+
+}
+
+.about-btn:hover{
+  background: gold;
+  color: white;
+}
+
+
+@media screen and (min-width: 992px){
+  .about-center {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .about-img, .about-info{
+    flex: 0 0 calc(50% -32px);
+    margin-bottom: 0;
+    align-self: center;
+
+  }
+}
+
+/* workout section */
+
+
+#workout {
+  background: black;
+  padding: 40px;
+
+}
+
+.title {
+  font-size: 60px;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.service{
+  text-align: center;
+  margin:20px 0 ;
+  color: white;
+
+}
+
+.service.fas{
+  padding: 20px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.service h3{
+  margin: 10px 0 15px 0;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.service p{
+  line-height: 1.5;
+  width: 75%;
+  margin: 10px auto;
+  font-weight: lighter;
+}
+
+
+@media screen and (min-width:576px) {
+  .work-center{
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .service{
+    flex: 0 0 calc(50% - 16px);
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .service{
+    flex: 0 0 calc(25% - 16px);
+  }
+}
+
+/*testimonials */
+
+#testimonial {
+  padding: 40px;
+  background: white;
+
+}
+
+#testimonial .title{
+  font-size: 60px;
+  text-transform: capitalize;
+  color: black;
+  text-align: center;
+  margin: 25px 0 20px 0;
+}
+
+.testimonial {
+  color: black;
+  text-align: center;
+  margin: 20px 0;
+
+}
+
+.testimonial img{
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+.testimonial h3{
+  margin: 10px 0 ;
+  text-transform: uppercase;
+  color: black;
+}
+
+.testimonial p{
+  line-height: 1.5;
+  width: 75%;
+  margin: 10px auto;
+  font-weight: lighter;
+}
+
+@media screen and (min-width:576px) {
+  .client-center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tesimonial{
+    flex: 0 0 calc(35% - 32px); 
+  }
+}
+
+
+/* change "our classes" to gallery */
+
+
+#gallery {
+  background: black;
+  padding: 40px;
+}
+
+#gallery .title{
+  font-size: 60px;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  margin: 25px 0 20px 0;
+}
+
+.gallery-container {
+  max-width: 90vw;
+  margin: 0 auto;
+  
+}
+
+.gallery-item{
+  background-color: black;
+  color: white;
+  margin: 20px 0;
+
+}
+
+#gallery img{
+  width: 100%;
+  display: block;
+}
+
+.img-container {
+  position: relative
+}
+
+.gallery-item h4{
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+@media screen and (min-width:576px){
+  .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+  
+}
+
+/* sub section */
+
+#subscribe {
+  padding:40px;
+  background: white;
+
+}
+
+#subscribe .title{
+  font-size: 60px;
+  text-transform: capitalize;
+  color: black;
+  text-align: center;
+  margin: 25px 0 20px 0;
+}
+
+.input-group{
+  width: 80vw;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+
+
+.form-control{
+  flex: 1 1 auto;
+}
+
+.form-control, .btn-submit {
+  padding: 6px 9px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 1.5;
+  background: white;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid black;
+}
+
+::placeholder{
+  background-color: black;
+  color: white;
+}
+
+.btn-submit{
+  color: white;
+  background-color: black;
+}
+
+footer{
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footer-text{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.terms{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+
