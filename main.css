@@ -2,6 +2,8 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
 }
 
 
@@ -227,14 +229,14 @@ header {
 /* about section */
 
 .section-center{
-  padding: 64px;
+  padding: 64px;   /*change this tom on media smaller padding top onyl, also deduct margin on right side */
   width: 80vw;
   max-width: 1170px;
   margin: 0 auto;
 }
 
 .about {
-  background: white;
+  background: black;
 }
 
 .about-img{
@@ -242,6 +244,7 @@ header {
   display: block;
   height:520px;
   width: 480px;
+  align-self: center;
 }
 
 .about-img, .about-info {
@@ -250,19 +253,22 @@ header {
 
 .about-info h2{
   text-transform: uppercase;
+  color: white;
 }
 
 .about-text{
+  margin-top:20px;
   margin-bottom: 20px;
   line-height: 2;
   font-weight: 300;
+  color: rgb(207, 198, 198);
 }
 
 .about-btn{
   text-transform: uppercase;
-  color: black;
+  color: white;
   letter-spacing: 4px;
-  border: 3px solid black;
+  border: 3px solid white;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -288,6 +294,11 @@ header {
     flex: 0 0 calc(50% -32px);
     margin-bottom: 0;
     align-self: center;
+
+  }
+
+  .about-text {
+      margin-right: 55px;
 
   }
 }
@@ -476,14 +487,14 @@ header {
 
 #subscribe {
   padding:40px;
-  background: white;
+  background: rgb(63, 62, 62);
 
 }
 
 #subscribe .title{
-  font-size: 60px;
+  font-size: 30px;
   text-transform: capitalize;
-  color: black;
+  color:white;
   text-align: center;
   margin: 25px 0 20px 0;
 }
@@ -503,33 +514,33 @@ header {
 
 .form-control, .btn-submit {
   padding: 6px 9px;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
   font-weight: 300;
   letter-spacing: 1.5;
   background: white;
-  text-transform: uppercase;
   outline: none;
   border: 1px solid black;
+  border-radius: 3px;
 }
 
 ::placeholder{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 .btn-submit{
   color: white;
-  background-color: black;
+  background-color: rgb(180, 170, 170);
 }
 
 footer{
-  background-color: black;
+  background-color: rgb(110, 105, 105);
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: baseline;  
 }
 
 .footer-text{
