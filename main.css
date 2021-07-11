@@ -370,53 +370,81 @@ header {
 
 /*testimonials */
 
-#testimonial {
+#Testimonial {
   padding: 40px;
-  background: white;
-
+  background:rgb(255, 255, 255) ;
 }
 
-#testimonial .title{
-  font-size: 60px;
+.test-title {
+  font-size: 40px;
   text-transform: capitalize;
-  color: black;
   text-align: center;
+  color: black;
+  font-weight: bolder;
   margin: 25px 0 20px 0;
 }
 
-.testimonial {
-  color: black;
-  text-align: center;
-  margin: 20px 0;
+.client-center{
+  flex-wrap: wrap;
 
+}
+
+.testimonial {
+  color: gainsboro;
+  text-align: center;
+  margin: 0;
+  border-style:solid;
+  border-radius:10px;
+  margin: 20px;
+  padding: 20px;
+  background-color:gainsboro;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30rem;
+}
+
+.border{
+  border:solid;
+  border-color: rgb(189, 185, 184);
 }
 
 .testimonial img{
+  padding-top: 10px;
   border-radius: 50%;
-  max-width: 200px;
+  width: 200px;
+  height: 200px;
 }
 
+
 .testimonial h3{
-  margin: 10px 0 ;
-  text-transform: uppercase;
-  color: black;
+  margin: 5px 0 ;
+  color: #494949;
+  font-size: 11px;
+}
+
+.testimonial h4{
+  font-size: 10px;
+  font-weight: 300;
+  color: #4e4e4e;;
 }
 
 .testimonial p{
   line-height: 1.5;
-  width: 75%;
-  margin: 10px auto;
-  font-weight: lighter;
+  width: 50%;
+  margin: 30px auto;
+  font-weight:bold;
+  color: black;
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:868px) {
   .client-center{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
   .tesimonial{
-    flex: 0 0 calc(35% - 32px); 
+    flex: 0 0 calc(35% - 32px);     
   }
 }
 
