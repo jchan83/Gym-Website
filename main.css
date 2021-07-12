@@ -229,21 +229,26 @@ header {
 /* about section */
 
 .section-center{
-  padding: 64px;   /*change this tom on media smaller padding top onyl, also deduct margin on right side */
+  padding-top: 64px;
+  padding-bottom: 32px;   /*change this tom on media smaller padding top onyl, also deduct margin on right side */
   width: 80vw;
   max-width: 1170px;
   margin: 0 auto;
+  margin-right: px;
 }
 
 .about {
   background: black;
 }
 
+.about-info{
+  text-align: center;
+}
+
 .about-img{
   width: 100%;
   display: block;
-  height:520px;
-  width: 480px;
+  height: auto;
   align-self: center;
 }
 
@@ -254,6 +259,8 @@ header {
 .about-info h2{
   text-transform: uppercase;
   color: white;
+  margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 .about-text{
@@ -262,6 +269,7 @@ header {
   line-height: 2;
   font-weight: 300;
   color: rgb(207, 198, 198);
+  font-size: 1.5rem;
 }
 
 .about-btn{
@@ -283,33 +291,41 @@ header {
 }
 
 
-@media screen and (min-width: 992px){
+/* @media screen and (min-width: 992px){
   .about-center {
     display: flex;
     justify-content: space-between;
 
   }
 
-  .about-img, .about-info{
+ .about-info{
     flex: 0 0 calc(50% -32px);
     margin-bottom: 0;
     align-self: center;
-
   }
-
+  .about-img{ 
+    width: 35vw;
+    height: 35vw;  
+    margin-left: 100px;
+  }
+  
   .about-text {
-      margin-right: 55px;
+      margin-right: -55px;
 
   }
-}
+} */
 
 /* workout section */
 
 
 #workout {
   background: black;
-  padding: 40px;
-
+  padding: 50px;
+  border:solid;
+  border-color: red;
+  border-left: none;
+  border-right: none;
+  
 }
 
 .title {
@@ -318,26 +334,25 @@ header {
   color: white;
   text-align: center;
   margin: 0 auto;
+  color: rgb(255, 2, 2);
+  padding-bottom: 50px;
 }
 
 .service{
   text-align: center;
   margin:20px 0 ;
   color: white;
-
+  align-items: center;
 }
 
-.service.fas{
-  padding: 20px;
-  font-size: 50px;
-  cursor: pointer;
-}
 
 .service h3{
   margin: 10px 0 15px 0;
   text-transform: capitalize;
-  font-size: 30px;
-}
+  font-size: 25px;
+  color: red;
+  font-style: italic;
+} 
 
 .service p{
   line-height: 1.5;
@@ -345,6 +360,7 @@ header {
   margin: 10px auto;
   font-weight: lighter;
 }
+
 
 
 @media screen and (min-width:576px) {
@@ -364,7 +380,6 @@ header {
 
 @media screen and (min-width: 756px) {
   .service{
-    flex: 0 0 calc(25% - 16px);
   }
 }
 
