@@ -361,7 +361,11 @@ header {
   font-weight: lighter;
 }
 
-
+#support {
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
 
 @media screen and (min-width:576px) {
   .work-center{
@@ -378,9 +382,15 @@ header {
   }
 }
 
-@media screen and (min-width: 756px) {
+@media screen and (min-width: 1200px) {
   .service{
+    flex: 0 0 calc(25% - 16px);
   }
+  #support {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
 }
 
 /*testimonials */
@@ -446,20 +456,20 @@ header {
 
 .testimonial p{
   line-height: 1.5;
-  width: 50%;
+  width: 70%;
   margin: 30px auto;
   font-weight:bold;
   color: black;
 }
 
-@media screen and (min-width:868px) {
+@media screen and (min-width:1040px) {
   .client-center{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
-  .tesimonial{
-    flex: 0 0 calc(35% - 32px);     
+  .testimonial{
+    flex: 0 0 calc(34% - 50px);     
   }
 }
 
@@ -475,7 +485,7 @@ header {
 #gallery .title{
   font-size: 60px;
   text-transform: capitalize;
-  color: white;
+  color: rgb(109, 109, 109);
   text-align: center;
   margin: 25px 0 20px 0;
 }
@@ -483,14 +493,14 @@ header {
 .gallery-container {
   max-width: 90vw;
   margin: 0 auto;
-  
+  overflow-x: auto;
 }
 
 .gallery-item{
   background-color: black;
-  color: white;
+  color: rgb(204, 202, 202);
   margin: 20px 0;
-
+  font-weight: bolder;
 }
 
 #gallery img{
@@ -505,6 +515,7 @@ header {
 .gallery-item h4{
   margin-top: 10px;
   margin-left: 18px;
+  text-align: center;
 }
 
 @media screen and (min-width:576px){
@@ -519,7 +530,7 @@ header {
 @media screen and (min-width:992px) {
   .gallery-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 16px;
     grid-row-gap: 16px;
   }
